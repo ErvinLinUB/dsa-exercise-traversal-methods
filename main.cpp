@@ -23,23 +23,23 @@ void inorder(BinaryTreeNode* root) {
     inorder(root->right);
 }
 
-void preOrder(BinaryTreeNode* root) {
+void preorder(BinaryTreeNode* root) {
     if (root == nullptr) {
         return;
     }
 
     cout << root->data << " ";
-    preOrder(root->left);
-    preOrder(root->right);
+    preorder(root->left);
+    preorder(root->right);
 }
 
-void postOrder(BinaryTreeNode* root) {
+void postorder(BinaryTreeNode* root) {
     if (root == nullptr) {
         return;
     }
 
-    postOrder(root->left);
-    postOrder(root->right);
+    postorder(root->left);
+    postorder(root->right);
     cout << root->data << " ";
 }
 

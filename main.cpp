@@ -66,3 +66,10 @@ void levelorder(BinaryTreeNode* root) {
         if (current->right) { q.push(current->right);}
     }
 }
+
+void freeTree(BinaryTreeNode* root) {
+    if (!root) return;
+    freeTree(root->left);
+    freeTree(root->right);
+    delete root;
+}

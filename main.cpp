@@ -28,8 +28,8 @@ void preOrder(BinaryTreeNode* root) {
     }
 
     cout << root->data << " ";
-    preorder(root->left);
-    preorder(root->right);
+    preOrder(root->left);
+    preOrder(root->right);
 }
 
 void postOrder(BinaryTreeNode* root) {
